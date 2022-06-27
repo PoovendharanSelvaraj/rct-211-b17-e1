@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./ShoeCard.module.css"
 
-const ShoeCard = () => {
-  const shoeId = null;
+const ShoeCard = ({datas}) => {
+  const shoeId = datas.id;
   return (
-    <div data-cy={`shoe-card-wrapper-${shoeId}`}>
-      <img data-cy="shoe-card-image" alt="shoe" />
-      <div>
-        <div data-cy="shoe-name">shoe-name</div>
+    <div data-cy={`shoe-card-wrapper-${shoeId}`}  className={styles.card} >
+      <img data-cy="shoe-card-image" src={datas.image}  alt="shoe" />
+      <div className={styles.details} >
+        <div data-cy="shoe-name">{datas.name}</div>
         <div>
           In Cart:
           <div data-cy="shoe-count">0</div>

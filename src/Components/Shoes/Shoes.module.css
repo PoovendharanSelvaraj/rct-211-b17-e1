@@ -1,0 +1,9 @@
+.Card{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,18%);
+    grid-gap: 10px;
+}

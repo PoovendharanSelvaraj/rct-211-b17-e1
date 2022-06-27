@@ -11,7 +11,7 @@ const Navbar = () => {
           style={{ display: "block" }}
         />
       </div>
-      <div></div>
+      <div style={{fontWeight:"bold",fontFamily:"cursive"}} >Men's Sneakers</div>
     </div>
   );
 };
